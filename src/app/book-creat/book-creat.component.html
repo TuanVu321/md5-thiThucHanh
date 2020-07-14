@@ -1,0 +1,18 @@
+<h1>tao moi sach</h1>
+
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  <input type="hidden" formControlName="id">
+  <div>
+    <label>Title</label>
+    <input type="text" formControlName="title" placeholder="Enter Title">
+  </div>
+  <div>
+    <label >Description</label>
+    <input type="text"formControlName="description">
+  </div>
+  <div>
+    <label>Author</label>
+    <input type="text" formControlName="author">
+  </div>
+  <button type="submit">Submit</button>
+</form>
